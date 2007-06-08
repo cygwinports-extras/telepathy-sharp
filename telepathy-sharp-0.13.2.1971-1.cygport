@@ -1,0 +1,17 @@
+SVN_URI="https://svn.sourceforge.net/svnroot/tapioca-voip/trunk/${PN}"
+SVN_REV="${PVP[3]}"
+
+inherit mono svn
+
+DESCRIPTION="Mono C# Telepathy bindings"
+HOMEPAGE="http://telepathy.freedesktop.org/wiki/"
+
+src_compile() {
+	check_prog_req gnome-autogen.sh gnome-common
+
+	cd ${S}
+	NOCONFIGURE=1 ./autogen.sh || error "autogen.sh failed"
+	cd ${B}
+	cygconf
+	cygmake
+}

@@ -1,0 +1,5 @@
+category: Dotnet Net
+requires: mono ndesk-dbus-sharp
+sdesc: "Mono Telepathy client interface"
+ldesc: "telepathy-sharp is a .NET package containing proxy classes for 
+use in Telepathy clients. It's used in at least TapiocaSharp."

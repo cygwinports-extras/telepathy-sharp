@@ -1,0 +1,67 @@
+telepathy-sharp
+------------------------------------------
+telepathy-sharp is a .NET package containing proxy classes for use in 
+Telepathy clients. It's used in at least TapiocaSharp.
+
+Runtime requirements:
+  mono-1.2.3.1-2
+  ndesk-dbus-sharp-0.4.2-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-1
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  cygport-0.3.1-1
+  gawk-3.1.5-4
+  gnome-common-2.18.0-1
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://telepathy.freedesktop.org/wiki/TelepathySharp
+
+Canonical download:
+  SVN
+
+-------------------------------------------
+
+Build instructions:
+  unpack telepathy-sharp-0.13.2.1971-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./telepathy-sharp-0.13.2.1971-X.cygport all
+
+This will create:
+  /usr/src/telepathy-sharp-0.13.2.1971-X-src.tar.bz2
+  /usr/src/telepathy-sharp-0.13.2.1971-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/mono/gac/INdT.Telepathy/0.13.2.25548__492ed1c641a38b09/INdT.Telepathy.dll
+  /usr/lib/mono/gac/INdT.Telepathy/0.13.2.25548__492ed1c641a38b09/INdT.Telepathy.dll.mdb
+  /usr/lib/mono/telepathy-sharp/INdT.Telepathy.dll
+  /usr/lib/pkgconfig/telepathy-sharp.pc
+  /usr/share/doc/Cygwin/telepathy-sharp-0.13.2.1971.README
+  /usr/share/doc/telepathy-sharp-0.13.2.1971/AUTHORS
+  /usr/share/doc/telepathy-sharp-0.13.2.1971/COPYING
+  /usr/share/doc/telepathy-sharp-0.13.2.1971/ChangeLog
+  /usr/share/doc/telepathy-sharp-0.13.2.1971/INSTALL
+  /usr/share/doc/telepathy-sharp-0.13.2.1971/LICENSE
+  /usr/share/doc/telepathy-sharp-0.13.2.1971/README
+  /usr/share/doc/telepathy-sharp-0.13.2.1971/TODO
+
+------------------
+
+Port Notes:
+
+----- version 0.13.2.1971-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
